@@ -5082,6 +5082,14 @@ components:
           type: string
           description: Notes related to the vendor
           example: "Vendor notes go here"
+        status:
+          type: string
+          description: Current status of the vendor.
+          enum:
+            - active
+            - archived
+            - deleted
+          example: "active"
         bankDetails:
           type: array
           items:
